@@ -1,0 +1,32 @@
+﻿@* @{
+    string name = "Meryem xanim";
+  
+}
+
+
+
+<h1 style="color:magenta">@name</h1>
+
+<ul>
+    @foreach (var item in students)
+    {
+        <li>@item</li>
+    }
+    @for (int i = 0; i < students.Count; i++)
+    {
+        <li>@students[i]</li>
+    }
+</ul>
+ *@
+
+
+ @model List<StudentVM>;
+
+
+<ul>
+    @foreach (var item in Model)
+    {
+        <li>@(item.FullName)</li>
+    }
+
+</ul>

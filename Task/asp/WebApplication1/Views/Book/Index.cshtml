@@ -1,0 +1,21 @@
+﻿<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+@model List<BookVM>
+
+<table class="table mt-5">
+    <thead>
+        <tr>
+            <th>Name:</th>
+           
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Name</td>
+                
+            </tr>
+        }
+    </tbody>
+</table>

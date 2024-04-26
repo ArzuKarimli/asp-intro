@@ -1,0 +1,25 @@
+﻿@model List<UserVM>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+<table class="table mt-5">
+    <thead>
+        <tr>
+            <th>FullName:</th>
+            <th>Age:</th>
+            <th>Email:</th>
+            <th>Address:</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.FullName</td>
+                <td>@item.Age</td>
+                <td>@item.Email</td>
+                <td>@item.Address</td>
+            </tr>
+        }
+    </tbody>
+</table>

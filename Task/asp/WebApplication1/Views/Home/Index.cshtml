@@ -1,0 +1,28 @@
+﻿
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+@model List<EmployeeVM>
+ 
+<table class="table mt-5">
+    <thead>
+        <tr>
+            <th>Name:</th>
+            <th>Surname:</th>
+            <th>Age:</th>
+            <th>Salary:</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Name</td>
+                <td>@item.Surname</td>
+                <td>@item.Age</td>
+                <td>@item.Salary</td>
+            </tr>
+        }
+    </tbody>
+</table>
